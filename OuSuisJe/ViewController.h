@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface ViewController : UIViewController
+// Ajout du protocole
+<CLLocationManagerDelegate>
+// Variable d'instance
+{
+    CLLocationManager* locationManager;
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *maPosition;
 @end
